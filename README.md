@@ -50,7 +50,9 @@ Store sensitive information as secrets in your GitHub repository. Navigate to yo
 
 ## Configure Workers for Proxy Site
 
-eg. <https://www.proxysites.ai.serp.ing/>, source [www.proxysites.ai](https://www.proxysites.ai)
+eg. 
+- <https://www.proxysites.ai.serp.ing/>, source [www.proxysites.ai](https://www.proxysites.ai)
+- <https://www.serpchecking.com.serp.ing/>, source [www.serpchecking.com](https://www.serpchecking.com)
 
 ### 1. Go Workers & Pages
 
