@@ -37,7 +37,7 @@ To automate your deployment process, you can use GitHub Actions or a similar CI/
 
 Store sensitive information as secrets in your GitHub repository. Navigate to your repository settings and add the following secrets:
 
-- **`CLOUDFLARE_API_TOKEN`**: Your Cloudflare API token. This token should have permissions to deploy and manage your Cloudflare Workers.
+- **`CLOUDFLARE_API_TOKEN`**: Your Cloudflare **API token**. This token should have permissions to deploy and manage your Cloudflare Workers.
 - **`CLOUDFLARE_ACCOUNT_ID`**: Your Cloudflare account ID.
 
 
