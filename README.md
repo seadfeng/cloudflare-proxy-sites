@@ -1,4 +1,4 @@
-# Cloudflare Sites Proxy
+# Cloudflare Proxy Sites
 
 
 ## Local Deploy 
