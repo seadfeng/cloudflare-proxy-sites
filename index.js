@@ -20,8 +20,6 @@ Disallow: /
   }
 
   const proxySite = getProxySite(host, currentDomain);
-
-  const serverHost = host;
   const urlPath = url.pathname;
   const origin = `https://${proxySite}`; 
   const actualUrl = new URL(`${origin}${urlPath}${url.search}${url.hash}`); 
@@ -46,7 +44,7 @@ Disallow: /
 
   if (contentType && (contentType.includes('text/') || contentType.includes('application/x-javascript'))) {
     let text = new TextDecoder('utf-8').decode(body);
-    text = text.replace(new RegExp( proxySite, 'g'), serverHost );
+    text = text.replace(new RegExp( proxySite, 'g'), host );
     body = new TextEncoder().encode(text).buffer;
   }
 
