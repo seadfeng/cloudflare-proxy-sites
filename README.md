@@ -1,5 +1,17 @@
 # Cloudflare Proxy Sites
 
+A powerful and easy-to-use website mirroring tool based on Cloudflare Workers.
+
+## 🌟 Key Features
+
+- 🆓 Free to use
+- 🌐 Mirror any website with ease
+- 🚀 Quick deployment using Wrangler
+- 🔗 Support for multiple domains
+- 🤖 Automated deployment via GitHub Actions
+- 🛡️ Enhanced privacy and security
+- 🌍 Bypass geographical restrictions
+- ⚡ Improved access spee
 
 ## Local Deploy 
 
@@ -55,12 +67,9 @@ Store sensitive information as secrets in your GitHub repository. Navigate to yo
 - Select "Secrets" from the sidebar.
 - Click on "New repository secret" to add each secret.
 
-## 通过 cloudflare 界面安装
+### Manual Cloudflare Setup
 
-中文安装教程参考, 类似的CF反代，通过目录访问
-
-https://github.com/gaboolic/cloudflare-reverse-proxy
-
+For detailed instructions, see [this guide](https://github.com/gaboolic/cloudflare-reverse-proxy) (in Chinese). 
 
 ## Configure Workers for Proxy Site
 
@@ -88,18 +97,9 @@ Ensure the certificate is active.
 ![Domain config ](images/done.png)
 
 
-## About the robots.txt
+## 🤖 robots.txt Configuration
 
-**Warning**: Allowing web crawlers to index this content may affect the proxied site. If it is not your site or if you are unsure of the potential impact, please stop here!
-
-### Default Content:
-
-```txt
-User-agent: *
-Disallow: /
-```
-
-### Change your robots.txt
+Default configuration (recommended for privacy): 
 
 ```js
 // index.js
@@ -107,3 +107,13 @@ const robots = `User-agent: *
 Disallow: /
     `;
 ```
+
+⚠️ **Warning**: Modifying this may affect the indexed content of the mirrored site.
+
+## 📜 Disclaimer
+
+This tool is for educational and personal use only. Users are responsible for complying with all applicable laws and regulations. The developers are not liable for any misuse or legal consequences.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
