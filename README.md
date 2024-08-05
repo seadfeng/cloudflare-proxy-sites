@@ -35,6 +35,19 @@ Free domain name application:
 const currentDomain = "example.com";
 ```
 
+#### Use workers.dev default domain?
+
+This method only supports single domain reverse proxy.
+
+Here is the code:
+
+[workers.dev/index.js](workers.dev/index.js)
+
+```js
+// replace to your proxy site domain
+const proxySite = 'example.com';
+```
+
 ### 3. deploy to workers
 
 ```sh
