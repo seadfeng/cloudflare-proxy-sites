@@ -49,6 +49,10 @@ Here is the code:
 const proxySite = 'example.com';
 ```
 
+Get your workers.dev visit:
+
+![workers.dev domain](images/workers-visit.png)
+
 ### 3. deploy to workers
 
 ```sh
