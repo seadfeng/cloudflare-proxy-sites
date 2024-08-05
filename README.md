@@ -44,6 +44,7 @@ Here is the code:
 [workers.dev/index.js](workers.dev/index.js)
 
 ```js
+// workers.dev/index.js
 // replace to your proxy site domain
 const proxySite = 'example.com';
 ```
