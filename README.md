@@ -74,8 +74,13 @@ For detailed instructions, see [this guide](https://github.com/gaboolic/cloudfla
 ## Configure Workers for Proxy Site
 
 eg. 
-- <https://www.proxysites.ai.serp.ing/>, source [www.proxysites.ai](https://www.proxysites.ai)
-- <https://www.serpchecking.com.serp.ing/>, source [www.serpchecking.com](https://www.serpchecking.com)
+
+My root domain is `serp.ing`,
+
+proxy sites [www.proxysites.ai](https://www.proxysites.ai), [www.serpchecking.com](https://www.serpchecking.com)
+
+- <https://www.proxysites.ai.serp.ing/> 
+- <https://www.serpchecking.com.serp.ing/>
 
 ### 1. Go Workers & Pages
 
