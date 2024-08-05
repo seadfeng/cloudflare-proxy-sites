@@ -41,19 +41,19 @@ Store sensitive information as secrets in your GitHub repository. Navigate to yo
 - **`CLOUDFLARE_ACCOUNT_ID`**: Your Cloudflare account ID.
 
 
-## 通过 cloudflare 界面安装创建
-
-具体安装教程参考
-
-https://github.com/gaboolic/cloudflare-reverse-proxy
-
-
 #### To add secrets:
 
 - Go to your repository on GitHub.
 - Click on "Settings" in the top menu.
 - Select "Secrets" from the sidebar.
 - Click on "New repository secret" to add each secret.
+
+## 通过 cloudflare 界面安装创建
+
+中文安装教程参考
+
+https://github.com/gaboolic/cloudflare-reverse-proxy
+
 
 ## Configure Workers for Proxy Site
 
