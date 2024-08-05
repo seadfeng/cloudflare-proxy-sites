@@ -67,7 +67,7 @@ Store sensitive information as secrets in your GitHub repository. Navigate to yo
 - Select "Secrets" from the sidebar.
 - Click on "New repository secret" to add each secret.
 
-### Manual Cloudflare Setup
+## Manual Cloudflare Setup
 
 For detailed instructions, see [this guide](https://github.com/gaboolic/cloudflare-reverse-proxy) (in Chinese). 
 
