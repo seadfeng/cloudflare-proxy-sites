@@ -89,6 +89,8 @@ Store sensitive information as secrets in your GitHub repository. Navigate to yo
 
 For detailed instructions, see [this guide](https://github.com/gaboolic/cloudflare-reverse-proxy) (in Chinese). 
 
+Source:[gaboolic/cloudflare-reverse-proxy](<https://github.com/gaboolic/cloudflare-reverse-proxy)>)
+
 ## Configure Workers for Proxy Site
 
 eg. 
