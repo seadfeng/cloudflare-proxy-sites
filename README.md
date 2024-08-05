@@ -48,9 +48,9 @@ Store sensitive information as secrets in your GitHub repository. Navigate to yo
 - Select "Secrets" from the sidebar.
 - Click on "New repository secret" to add each secret.
 
-## 通过 cloudflare 界面安装创建
+## 通过 cloudflare 界面安装
 
-中文安装教程参考
+中文安装教程参考, 类似的CF反代，通过目录访问
 
 https://github.com/gaboolic/cloudflare-reverse-proxy
 
