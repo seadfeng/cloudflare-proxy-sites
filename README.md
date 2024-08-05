@@ -86,3 +86,24 @@ Support multiple domain names, the following only set up a as an example
 Ensure the certificate is active.
 
 ![Domain config ](images/done.png)
+
+
+## About the robots.txt
+
+**Warning**: Allowing web crawlers to index this content may affect the proxied site. If it is not your site or if you are unsure of the potential impact, please stop here!
+
+### Default Content:
+
+```txt
+User-agent: *
+Disallow: /
+```
+
+### Change your robots.txt
+
+```js
+// index.js
+const robots = `User-agent: *
+Disallow: /
+    `;
+```
