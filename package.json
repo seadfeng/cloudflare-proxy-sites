@@ -2,6 +2,8 @@
   "name": "cloudflare-proxy-sites",
   "version": "0.0.0",
   "private": true,
+  "license": "MIT",
+  "author": "Sead Feng",
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
