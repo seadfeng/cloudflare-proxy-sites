@@ -3,13 +3,13 @@
 
 ## Local Deploy 
 
-1. install `wrangler`
+### 1. install `wrangler`
 
 ```sh
 npm i -g wrangler
 ```
 
-2. Configure your root domain - **Important!**
+### 2. Configure your root domain - **Important!**
 
 Free domain name application:
 
@@ -23,7 +23,7 @@ Free domain name application:
 const currentDomain = "example.com";
 ```
 
-3. deploy to workers
+### 3. deploy to workers
 
 ```sh
 # Login
