@@ -9,11 +9,18 @@
 npm i -g wrangler
 ```
 
-2. Configure your root domain
+2. Configure your root domain - **Important!**
+
+Free domain name application:
+
+- https://secure.nom.za/
+- https://nic.eu.org/ 
+- https://nic.ua
 
 ```js
 // index.js
-const currentDomain = "your_domain";
+// replace to your domain
+const currentDomain = "example.com";
 ```
 
 3. deploy to workers
