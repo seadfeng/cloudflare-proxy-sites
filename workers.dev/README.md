@@ -24,6 +24,8 @@ Copy your code to editor [workers.dev/index.js](index.js) or [index.js](../index
 
 ### workers.dev/index.js
 
+Only support for single domain
+
 In this case, you will need change the code:
 
 ```js
@@ -31,6 +33,10 @@ In this case, you will need change the code:
 // replace to your proxy site domain
 const proxySite = 'example.com';
 ```
+
+### index.js
+
+Support for multiple domains
 
 ![Edit Code 2](images/edit2.png)
 
