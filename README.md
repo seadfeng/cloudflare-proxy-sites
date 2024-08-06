@@ -22,12 +22,12 @@ A powerful and easy-to-use website mirroring tool based on Cloudflare Workers.
 
 ### Single-Site
 
-You can use the workers.dev subdomain to access without needing your own domain. When deploying, configure the `proxySite` variable.
+You can use the workers.dev subdomain to access without needing your own domain. When deploying, configure the `targetDomain` variable.
 
 ```js
 // workers.dev/index.js
 // replace to your proxy site domain
-const proxySite = 'example.com';
+const targetDomain = 'example.com';
 ```
 
 Code: [workers.dev/index.js](workers.dev/index.js)
@@ -42,11 +42,11 @@ You need to have your own domain. The proxy site will be automatically recognize
 const ownDomain = "example.com";
 ```
 
-The domain consists of two parts: proxy domain and own domain. For example:
+The domain consists of two parts: target domain and own domain. For example:
 
 Proxy site address: https://www.proxysites.ai.serp.ing
 
-- **proxy domain**: www.proxysites.ai
+- **target domain**: www.proxysites.ai
 
 - **own domain**: serp.ing
 
@@ -87,7 +87,7 @@ Here is the code:
 ```js
 // workers.dev/index.js
 // replace to your proxy site domain
-const proxySite = 'example.com';
+const targetDomain = 'example.com';
 ```
 
 Get your workers.dev visit:

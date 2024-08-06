@@ -2,7 +2,7 @@ addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
  
-const getProxySite = (host, rootDomain) => {
+const getTargetDomain = (host, rootDomain) => {
   return host.split(`.${rootDomain}`)[0]; 
 }
  
@@ -19,8 +19,8 @@ Disallow: /
    return new Response(robots,{ status: 200 });
   }
 
-  const proxySite = getProxySite(host, ownDomain); 
-  const origin = `https://${proxySite}`; 
+  const targetDomain = getTargetDomain(host, ownDomain); 
+  const origin = `https://${targetDomain}`; 
   const actualUrl = new URL(`${origin}${pathname}${url.search}${url.hash}`); 
 
   const modifiedRequestInit = {
@@ -46,7 +46,7 @@ Disallow: /
     let text = new TextDecoder('utf-8').decode(body);
 
     // Replace all instances of the proxy site domain with the current host domain in the text
-    text = text.replace(new RegExp( proxySite, 'g'), host );
+    text = text.replace(new RegExp( targetDomain, 'g'), host );
     body = new TextEncoder().encode(text).buffer;
   }
 

@@ -14,8 +14,8 @@ Disallow: /
    return new Response(robots,{ status: 200 });
   }
 
-  const proxySite = 'www.proxysites.ai';
-  const origin = `https://${proxySite}`; 
+  const targetDomain = 'www.proxysites.ai';
+  const origin = `https://${targetDomain}`; 
   const actualUrl = new URL(`${origin}${pathname}${url.search}${url.hash}`); 
 
   const modifiedRequestInit = {
@@ -41,7 +41,7 @@ Disallow: /
     let text = new TextDecoder('utf-8').decode(body);
 
     // Replace all instances of the proxy site domain with the current host domain in the text
-    text = text.replace(new RegExp( proxySite, 'g'), host );
+    text = text.replace(new RegExp( targetDomain, 'g'), host );
     body = new TextEncoder().encode(text).buffer;
   }
 
