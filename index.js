@@ -42,7 +42,7 @@ Disallow: /
   const contentType = response.headers.get('content-type');
 
   // Check if the 'content-type' exists and matches JavaScript or any text/* types (e.g., text/html, text/xml)
-  if (contentType && ( /^(application\/x\-javascript|text\/)/i.test(contentType))) {
+  if (contentType && ( /^(application\/x-javascript|text\/)/i.test(contentType))) {
     let text = new TextDecoder('utf-8').decode(body);
 
     // Replace all instances of the proxy site domain with the current host domain in the text
