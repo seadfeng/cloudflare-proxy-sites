@@ -26,7 +26,7 @@ You can use the workers.dev subdomain to access without needing your own domain.
 
 ```js
 // workers.dev/index.js
-// replace to your proxy site domain
+// replace to your target site domain
 const targetDomain = 'example.com';
 ```
 
@@ -62,7 +62,7 @@ Code: [index.js](index.js)
 npm i -g wrangler
 ```
 
-### 2. Configure your root domain - **Important!**
+### 2. Configure your own domain - **Important!**
 
 Free domain name application:
 
@@ -78,7 +78,7 @@ const ownDomain = "example.com";
 
 #### Use workers.dev default domain?
 
-This method only supports single domain reverse proxy.
+This method only support single domain reverse proxy.
 
 Here is the code:
 
@@ -86,7 +86,7 @@ Here is the code:
 
 ```js
 // workers.dev/index.js
-// replace to your proxy site domain
+// replace to your target site domain
 const targetDomain = 'example.com';
 ```
 

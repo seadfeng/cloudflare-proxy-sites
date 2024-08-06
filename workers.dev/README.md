@@ -30,7 +30,7 @@ In this case, you will need change the code:
 
 ```js
 // workers.dev/index.js
-// replace to your proxy site domain
+// replace to your target site domain
 const targetDomain = 'example.com';
 ```
 
