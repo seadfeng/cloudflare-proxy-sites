@@ -6,7 +6,7 @@ const getProxySite = (host, rootDomain) => {
   return host.split(`.${rootDomain}`)[0]; 
 }
  
-const currentDomain = "serp.ing";
+const ownDomain = "serp.ing";
 
 async function handleRequest(request) {
   const url = new URL(request.url);
@@ -19,7 +19,7 @@ Disallow: /
    return new Response(robots,{ status: 200 });
   }
 
-  const proxySite = getProxySite(host, currentDomain); 
+  const proxySite = getProxySite(host, ownDomain); 
   const origin = `https://${proxySite}`; 
   const actualUrl = new URL(`${origin}${pathname}${url.search}${url.hash}`); 
 

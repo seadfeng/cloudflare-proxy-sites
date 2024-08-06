@@ -13,6 +13,45 @@ A powerful and easy-to-use website mirroring tool based on Cloudflare Workers.
 - 🌍 Bypass geographical restrictions
 - ⚡ Improved access spee
 
+
+## Two Types of Proxy Modes
+
+- Single-Site Reverse Proxy
+- Multi-Site Reverse Proxy
+
+
+### Single-Site
+
+You can use the workers.dev subdomain to access without needing your own domain. When deploying, configure the `proxySite` variable.
+
+```js
+// workers.dev/index.js
+// replace to your proxy site domain
+const proxySite = 'example.com';
+```
+
+Code: [workers.dev/index.js](workers.dev/index.js)
+
+### Multi-Site
+
+You need to have your own domain. The proxy site will be automatically recognized based on the domain name. After deployment, you only need to add custom domains according to the rules. Configure the `ownDomain` variable when deploying.
+
+```js
+// index.js
+// replace to your domain
+const ownDomain = "example.com";
+```
+
+The domain consists of two parts: proxy domain and own domain. For example:
+
+Proxy site address: https://www.proxysites.ai.serp.ing
+
+- **proxy domain**: www.proxysites.ai
+
+- **own domain**: serp.ing
+
+Code: [index.js](index.js)
+
 ## Local Deploy 
 
 ### 1. install `wrangler`
@@ -32,7 +71,7 @@ Free domain name application:
 ```js
 // index.js
 // replace to your domain
-const currentDomain = "example.com";
+const ownDomain = "example.com";
 ```
 
 #### Use workers.dev default domain?
