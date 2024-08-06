@@ -10,19 +10,18 @@ const currentDomain = "serp.ing";
 
 async function handleRequest(request) {
   const url = new URL(request.url);
-  const host = url.host;
+  const { host, pathname } = url;
 
-  if (url.pathname === '/robots.txt') {
+  if (pathname === '/robots.txt') {
     const robots = `User-agent: *
 Disallow: /
     `;
    return new Response(robots,{ status: 200 });
   }
 
-  const proxySite = getProxySite(host, currentDomain);
-  const urlPath = url.pathname;
+  const proxySite = getProxySite(host, currentDomain); 
   const origin = `https://${proxySite}`; 
-  const actualUrl = new URL(`${origin}${urlPath}${url.search}${url.hash}`); 
+  const actualUrl = new URL(`${origin}${pathname}${url.search}${url.hash}`); 
 
   const modifiedRequestInit = {
     method: request.method,
@@ -42,8 +41,11 @@ Disallow: /
   let body = await response.arrayBuffer();
   const contentType = response.headers.get('content-type');
 
-  if (contentType && (contentType.includes('text/') || contentType.includes('application/x-javascript'))) {
+  // Check if the 'content-type' exists and matches JavaScript or any text/* types (e.g., text/html, text/xml)
+  if (contentType && ( /^(application\/x\-javascript|text\/)/i.test(contentType))) {
     let text = new TextDecoder('utf-8').decode(body);
+
+    // Replace all instances of the proxy site domain with the current host domain in the text
     text = text.replace(new RegExp( proxySite, 'g'), host );
     body = new TextEncoder().encode(text).buffer;
   }
