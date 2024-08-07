@@ -2,6 +2,10 @@
 
 A powerful and easy-to-use website mirroring tool based on Cloudflare Workers.
 
+## Proxy Sites: Vercel Version
+
+https://github.com/seadfeng/vercel-proxy-sites
+
 ## 🌟 Key Features
 
 - 🆓 Free to use
