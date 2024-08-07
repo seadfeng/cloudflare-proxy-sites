@@ -41,7 +41,7 @@ Disallow: /
     let text = new TextDecoder('utf-8').decode(body);
 
     // Replace all instances of the proxy site domain with the current host domain in the text
-    text = text.replace(new RegExp( targetDomain, 'g'), host );
+    text = text.replace(new RegExp( `(//|https?://)${targetDomain}`, 'g'), `$1${host}` );
     body = new TextEncoder().encode(text).buffer;
   }
 
