@@ -44,7 +44,7 @@ const ownDomain = "example.com";
 
 The domain consists of two parts: target domain and own domain. For example:
 
-Proxy site address: https://www.proxysites.ai.serp.ing
+Proxy site address: [https://www.proxysites.ai.serp.ing](https://proxysites.ai.serp.ing)
 
 - **target domain**: www.proxysites.ai
 
@@ -63,12 +63,6 @@ npm i -g wrangler
 ```
 
 ### 2. Configure your own domain - **Important!**
-
-Free domain name application:
-
-- https://secure.nom.za/
-- https://nic.eu.org/ 
-- https://nic.ua
 
 ```js
 // index.js
@@ -138,8 +132,8 @@ My root domain is `serp.ing`,
 
 proxy sites [www.proxysites.ai](https://www.proxysites.ai), [www.serpchecking.com](https://www.serpchecking.com)
 
-- <https://www.proxysites.ai.serp.ing/> 
-- <https://www.serpchecking.com.serp.ing/>
+- [https://www.proxysites.ai.serp.ing](https://proxysites.ai.serp.ing)
+- [https://www.serpchecking.com.serp.ing](https://serpchecking.com.serp.ing)
 
 ### 1. Go Workers & Pages
 
