@@ -15,7 +15,7 @@ https://github.com/seadfeng/vercel-proxy-sites
 - 🤖 Automated deployment via GitHub Actions
 - 🛡️ Enhanced privacy and security
 - 🌍 Bypass geographical restrictions
-- ⚡ Improved access spee
+- ⚡ Improved access speed
 
 
 ## Two Types of Proxy Modes
